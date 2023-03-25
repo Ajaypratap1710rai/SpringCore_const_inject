@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans 
+  xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  https://www.springframework.org/schema/context
+  https://www.springframework.org/schema/context/spring-beans.xsd">
+  
+  <!-- We have decalre in there beans here-->
+  
+  <bean class="com.springcore.const_inject.Person" name="person" >
+    <constructor-arg value="AJAY"/>
+    <constructor-arg value="12" type="int"/>
+  </bean>
+  <bean class="com.springcore.const_inject.Ambiguity_problem" name="add">
+  <constructor-arg value="10" />
+  <constructor-arg value="20" />
+  </bean>
+ </beans>
+ 
